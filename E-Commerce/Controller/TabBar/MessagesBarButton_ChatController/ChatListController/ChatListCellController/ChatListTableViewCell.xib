@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatListTableViewCell" rowHeight="248" id="KGk-i7-Jjw" customClass="ChatListTableViewCell" customModule="E_Commerce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="793" height="248"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="793" height="248"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Oo3-bT-Lhm">
+                        <rect key="frame" x="28" y="19" width="737" height="210"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9U-h5-htO" customClass="CardViewCell" customModule="E_Commerce" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="589.66666666666663" height="210"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4I-IC-frT">
+                                        <rect key="frame" x="8.0000000000000036" y="8" width="48.333333333333343" height="194"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="c4I-IC-frT" firstAttribute="leading" secondItem="u9U-h5-htO" secondAttribute="leading" constant="8" id="3Lx-7x-j6J"/>
+                                    <constraint firstItem="c4I-IC-frT" firstAttribute="top" secondItem="u9U-h5-htO" secondAttribute="top" constant="8" id="IAT-S9-p2G"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="c4I-IC-frT" secondAttribute="trailing" constant="8" id="W3p-qm-jDj"/>
+                                    <constraint firstAttribute="bottom" secondItem="c4I-IC-frT" secondAttribute="bottom" constant="8" id="rQb-vb-jbd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="u9U-h5-htO" firstAttribute="width" secondItem="Oo3-bT-Lhm" secondAttribute="width" multiplier="0.8" id="tlx-bv-EcV"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="Oo3-bT-Lhm" secondAttribute="trailing" constant="8" id="LHM-ta-unz"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Oo3-bT-Lhm" secondAttribute="bottom" constant="8" id="cBf-wR-5AV"/>
+                    <constraint firstItem="Oo3-bT-Lhm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="gS4-g6-fSu"/>
+                    <constraint firstItem="Oo3-bT-Lhm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="mMf-Na-dca"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="chatStackView" destination="Oo3-bT-Lhm" id="7A2-tj-Fqc"/>
+                <outlet property="messageLabel" destination="c4I-IC-frT" id="4iB-vF-cYT"/>
+            </connections>
+            <point key="canvasLocation" x="133.58778625954199" y="-223.23943661971833"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

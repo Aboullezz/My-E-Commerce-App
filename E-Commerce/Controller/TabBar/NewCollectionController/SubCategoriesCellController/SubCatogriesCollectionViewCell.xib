@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SubCatogriesCollectionViewCell" id="gTV-IL-0wX" customClass="SubCatogriesCollectionViewCell" customModule="E_Commerce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="477" height="93"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="477" height="93"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTJ-ft-sZb">
+                        <rect key="frame" x="8" y="8" width="461" height="77"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTz-IV-ZhO">
+                                <rect key="frame" x="8" y="28" width="445" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="ZTz-IV-ZhO" firstAttribute="centerY" secondItem="VTJ-ft-sZb" secondAttribute="centerY" id="8cH-yp-yQ8"/>
+                            <constraint firstAttribute="trailing" secondItem="ZTz-IV-ZhO" secondAttribute="trailing" constant="8" id="EmC-TV-sC6"/>
+                            <constraint firstItem="ZTz-IV-ZhO" firstAttribute="centerX" secondItem="VTJ-ft-sZb" secondAttribute="centerX" id="U2y-v1-KeN"/>
+                            <constraint firstItem="ZTz-IV-ZhO" firstAttribute="leading" secondItem="VTJ-ft-sZb" secondAttribute="leading" constant="8" id="dOA-fp-ys9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="VTJ-ft-sZb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="4k7-fV-onq"/>
+                <constraint firstItem="VTJ-ft-sZb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="aZt-Eh-Ubt"/>
+                <constraint firstAttribute="bottom" secondItem="VTJ-ft-sZb" secondAttribute="bottom" constant="8" id="glg-kv-2gp"/>
+                <constraint firstAttribute="trailing" secondItem="VTJ-ft-sZb" secondAttribute="trailing" constant="8" id="o63-mQ-vw6"/>
+            </constraints>
+            <size key="customSize" width="477" height="93"/>
+            <connections>
+                <outlet property="cardView" destination="VTJ-ft-sZb" id="u7b-oW-2zr"/>
+                <outlet property="categoryNameLabel" destination="ZTz-IV-ZhO" id="yAh-U2-SKE"/>
+            </connections>
+            <point key="canvasLocation" x="-129" y="-29"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
